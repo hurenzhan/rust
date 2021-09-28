@@ -1,17 +1,17 @@
 fn main() {
-    let s = String::from("hello"); // 变量s进入作同城
-                                   // takes_ownership(s);  // s的值被移动进了函数
-                                   // 所以s从这里并始不再有效
+    let s = String::from("hello"); // 变量 s 进入作用城
+                                   // takes_ownership(s);  // s 的值被移动进了函数
+                                   // 所以 s 从这里并始不再有效
 
-    // 1. let (s) = takes_ownership(s); // 通过返回值转移所有权
+    // 1. let s = takes_ownership(s); // 通过返回值转移所有权
     // --1 println!("log-s {}", s);
 
     takes_ownership(&s); // 通过引用符
     println!("log-s {}", s);
 
-    let x = 5; // 变量x进入作用域
+    let x = 5; // 变量 x 进入作用域
     makes_copy(x);
-    // 由于 i32 是 Copy 的,所以我们像然可以在这之后使用x
+    // 由于 i32 是 Copy 的,所以我们像然可以在这之后使用 x
 }
 
 // 通过返回值转移所有权

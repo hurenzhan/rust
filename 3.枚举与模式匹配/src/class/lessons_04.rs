@@ -20,7 +20,7 @@ fn main() {
 
     // -------------------------------------------
 
-    // 匹配Option<T>
+    // 匹配Option<T> Some任意数据类型 None无法被识别
     let five = Some(5);
     let six = plus_one(five);
     let none = plus_one(None);

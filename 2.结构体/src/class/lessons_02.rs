@@ -30,7 +30,7 @@ struct User {
 
 fn build_user(email: String, username: String) -> User {
     User {
-        email, // 由于字段email与参数拥有相同的名字，只保留email即可。
+        email, // 由于字段 email 与参数拥有相同的名字，只保留 email 即可。
         username,
         active: true,
         sign_in_count: 1,
