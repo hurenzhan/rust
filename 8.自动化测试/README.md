@@ -13,9 +13,9 @@
 3. 断言运行结果与我们所期望的一致。
 
 # demo
-1. cargo new adder --lib 新建一个名为 adder 的库项目
-2. adder 库会自动生成一个 src/lib.rs 文件
-3. cargo test 会运行项目中的所有测试
+1. cargo new adder --lib 新建一个名为 adder 的库项目。
+2. adder 库会自动生成一个 src/lib.rs 文件。
+3. cargo test 会运行项目中的所有测试。
 
 # 总结
 1. 代码一旦发生 panic，就再也不能恢复了。只要决定某种情形是不可恢复的，那么就可以使用 panic! ，而不用考虑错误是否存在可以恢复的机会。
